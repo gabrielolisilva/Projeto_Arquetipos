@@ -30,7 +30,7 @@ botao.addEventListener('click', function(e){
 
     e.preventDefault();
     if(resultado.length === 0) {
-        alert('Você deve responder todas as perguntas')
+        alert('Você deve responder todas as perguntas');
         return
     };
     
