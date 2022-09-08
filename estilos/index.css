@@ -1,3 +1,11 @@
+#principal{
+    background-color: rgba(71, 172, 240, 0.774);
+    padding: 10px 0px 10px 0px;
+    max-width: 1440px;
+    margin: auto;
+    border-radius: 30px;
+}
+
 h1{
     text-align: center;
 }
