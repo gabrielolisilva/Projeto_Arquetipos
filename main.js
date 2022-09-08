@@ -29,8 +29,8 @@ botao.addEventListener('click', function(e){
     let governante = 0;
 
     e.preventDefault();
-    if(resultado.length === 0) {
-        alert('Você deve responder todas as perguntas');
+    if(resultado.length === 0 || resultado.length < 40) {
+        alert('Você deve responder todas as perguntas!');
         return
     };
     
