@@ -29,6 +29,12 @@ botao.addEventListener('click', function(e){
     let governante = 0;
 
     e.preventDefault();
+    if(resultado.length === 0) {
+        alert('Você deve responder todas as perguntas')
+        return
+    };
+    
+
     for(let valor of resultado){
         if(valor === 'o inocente') inocente ++;
         if(valor === 'órfão') orfao ++;
