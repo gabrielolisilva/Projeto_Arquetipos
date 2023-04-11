@@ -1,39 +1,39 @@
-#principal{
-    background-color: rgba(71, 172, 240, 0.774);
-    padding: 10px 0px 10px 0px;
-    max-width: 1440px;
-    margin: auto;
-    border-radius: 30px;
+#principal {
+  background-color: rgba(71, 172, 240, 0.774);
+  padding: 10px 0px 10px 0px;
+  max-width: 1440px;
+  margin: auto;
+  border-radius: 30px;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
-.perguntas{
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
+.perguntas {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
 }
 
-.perguntas h3{
-    font-size: 1.5em;
+.perguntas h3 {
+  font-size: 1.5em;
 }
 
-input[type=radio] {
-    border: 0px;
-    padding-right: 20px;
+input[type="radio"] {
+  border: 0px;
+  padding-right: 20px;
 }
 
-#divButton{
-    margin-top: 30px;
-    text-align: center;
+#divButton {
+  margin-top: 30px;
+  text-align: center;
 }
 
-#divButton button{
-    width: 680px;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid black;
-    cursor: pointer;
+#divButton button {
+  width: 680px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
 }
