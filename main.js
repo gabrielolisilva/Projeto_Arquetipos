@@ -91,8 +91,11 @@ const i_text = document.getElementById("i_text");
 const j_text = document.getElementById("j_text");
 const k_text = document.getElementById("k_text");
 const l_text = document.getElementById("l_text");
+const errorMsg = document.getElementById("errorMsg");
+const botao = document.getElementById("botao");
 
 let current_quiz = 0;
+const resultInfo = [];
 
 async function loadQuiz() {
   deselectOptions();
@@ -115,8 +118,39 @@ async function loadQuiz() {
   l_text.innerHTML = currentDataQuiz.l;
 }
 
+loadQuiz();
+
 function deselectOptions() {
   answersEls.forEach((answersEl) => (answersEl.checked = false));
 }
 
-loadQuiz();
+function getSelectedOption() {
+  let answer;
+  answersEls.forEach((answersEl) => {
+    if (answersEl.checked) {
+      answer = answersEl.value;
+    }
+  });
+  return answer;
+}
+
+function generateResult(answer) {
+  resultInfo.push(answer);
+  console.log(resultInfo);
+}
+
+botao.addEventListener("click", (e) => {
+  e.preventDefault();
+  const answer = getSelectedOption();
+  if (!answer) {
+    errorMsg.innerHTML = "Nenhuma reposta selecionada !";
+  } else {
+    if (current_quiz < 4) {
+      current_quiz++;
+      loadQuiz();
+      generateResult(answer);
+    } else {
+      alert("Terminout");
+    }
+  }
+});
