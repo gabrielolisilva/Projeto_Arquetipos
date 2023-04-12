@@ -22,6 +22,10 @@ ul > li {
   align-items: center;
 }
 
+ul > li > label {
+  cursor: pointer;
+}
+
 #container {
   background-color: rgb(28, 202, 255);
   padding: 20px 40px;

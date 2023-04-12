@@ -1,4 +1,4 @@
-const botao = document.querySelector('#botao')
+/* const botao = document.querySelector('#botao')
 let radios = document.body.querySelectorAll("input[type='radio']");
 let resultado = []
 let opcoes = []
@@ -74,3 +74,49 @@ botao.addEventListener('click', function(e){
 function abrirPágina(nomePagina){
     window.location.href = `${nomePagina}`;
 }
+ */
+
+const quiz = document.getElementById("container");
+const question = document.getElementById("question");
+const answersEls = document.querySelectorAll(".answer");
+const a_text = document.getElementById("a_text");
+const b_text = document.getElementById("b_text");
+const c_text = document.getElementById("c_text");
+const d_text = document.getElementById("d_text");
+const e_text = document.getElementById("e_text");
+const f_text = document.getElementById("f_text");
+const g_text = document.getElementById("g_text");
+const h_text = document.getElementById("h_text");
+const i_text = document.getElementById("i_text");
+const j_text = document.getElementById("j_text");
+const k_text = document.getElementById("k_text");
+const l_text = document.getElementById("l_text");
+
+let current_quiz = 0;
+
+async function loadQuiz() {
+  deselectOptions();
+  const quizData = await fetch("http://localhost:3500/quizData").then((resp) =>
+    resp.json()
+  );
+  const currentDataQuiz = quizData[current_quiz];
+  question.innerHTML = currentDataQuiz.question;
+  a_text.innerHTML = currentDataQuiz.a;
+  b_text.innerHTML = currentDataQuiz.b;
+  c_text.innerHTML = currentDataQuiz.c;
+  d_text.innerHTML = currentDataQuiz.d;
+  e_text.innerHTML = currentDataQuiz.e;
+  f_text.innerHTML = currentDataQuiz.f;
+  g_text.innerHTML = currentDataQuiz.g;
+  h_text.innerHTML = currentDataQuiz.h;
+  i_text.innerHTML = currentDataQuiz.i;
+  j_text.innerHTML = currentDataQuiz.j;
+  k_text.innerHTML = currentDataQuiz.k;
+  l_text.innerHTML = currentDataQuiz.l;
+}
+
+function deselectOptions() {
+  answersEls.forEach((answersEl) => (answersEl.checked = false));
+}
+
+loadQuiz();
