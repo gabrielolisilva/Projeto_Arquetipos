@@ -1,208 +1,69 @@
-@media screen and (max-width: 2000px) {
-    h1{
-        font-size: 3em;
-        padding-left: 40px;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap");
 
-    #divIMG{
-        text-align: center;
-    }
-
-    img{
-        width: 93vw;
-    }
-
-    h2{
-        font-size: 2.2em;
-        padding-left: 240px;
-        margin-bottom: 10px;
-    }
-
-    #principaisC{
-        text-align: center;
-        font-size: 2.7em;
-        padding-bottom: 15px;
-    }
-
-    h3{
-        padding-left: 240px;
-        font-size: 2.3em;
-    }
-
-    p{
-        padding: 5px 20px 20px 40px;
-        max-width: 1000px;
-        text-align: center;
-        font-size: 1.4em;
-        margin: auto;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 1600px) {
-    h1{
-        font-size: 3em;
-        padding-left: 40px;
-    }
-
-    #divIMG{
-        text-align: center;
-    }
-
-    img{
-        width: 93vw;
-    }
-
-    h2{
-        font-size: 2.2em;
-        padding-left: 240px;
-        margin-bottom: 10px;
-    }
-
-    #principaisC{
-        text-align: center;
-        font-size: 2.7em;
-        padding-bottom: 15px;
-    }
-
-    h3{
-        padding-left: 240px;
-        font-size: 2.3em;
-    }
-
-    p{
-        padding: 5px 20px 20px 40px;
-        max-width: 1000px;
-        text-align: center;
-        font-size: 1.4em;
-        margin: auto;
-    }
+body {
+  font-family: "Raleway", "Courier New", Courier, monospace;
 }
 
-@media screen and (max-width: 1324px) {
-    h1{
-        font-size: 3em;
-        padding-left: 30px;
-    }
-
-    #divIMG{
-        text-align: center;
-    }
-
-    img{
-        width: 93vw;
-    }
-
-    h2{
-        font-size: 2.2em;
-        padding-left: 22px;
-        margin-bottom: 10px;
-    }
-
-    #principaisC{
-        text-align: center;
-        font-size: 2.2em;
-        padding-bottom: 15px;
-    }
-
-    h3{
-        padding-left: 30px;
-        font-size: 1.7em;
-    }
-
-    p{
-        padding: 5px 20px 20px 25px;
-        max-width: 1000px;
-        text-align: justify;
-        font-size: 1.4em;
-    }
+ul {
+  padding-left: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    h1{
-        font-size: 3.2em;
-        padding-left: 30px;
-    }
-
-    #divIMG{
-        text-align: center;
-    }
-
-    img{
-        width: 93vw;
-    }
-
-    h2{
-        font-size: 2.2em;
-        padding-left: 22px;
-    }
-
-    #principaisC{
-        text-align: center;
-        font-size: 2.2em;
-        padding-bottom: 15px;
-    }
-
-    h3{
-        padding-left: 30px;
-        font-size: 1.7em;
-    }
-
-    p{
-        padding: 10px 20px 20px 25px;
-        max-width: 700px;
-        text-align: justify;
-        font-size: 1.4em;
-    }
+ul > li {
+  list-style: none;
+  padding: 2px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
-
-@media screen and (max-width: 480px) {
-    *{
-        padding: 0px;
-        margin: 0px;
-    }
-
-    h1{
-        font-size: 2em;
-        padding-left: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    #divIMG{
-        text-align: center;
-    }
-
-    img{
-        width: 90vw;
-        margin-bottom: 20px;
-    }
-
-    h2{
-        font-size: 1.5em;
-        text-align: left;
-        padding-left: 22px;
-    }
-
-    #principaisC{
-        text-align: center;
-        font-size: 1.5em;
-        padding-bottom: 20px;
-    }
-
-    h3{
-        padding-left: 22px;
-        font-size: 1.3em;
-    }
-
-    p{
-        padding: 10px 20px 20px 20px;
-        max-width: 400px;
-        text-align: justify;
-        font-size: 1.1em;
-    }
+#container {
+  background-color: rgb(28, 202, 255);
+  padding: 20px 40px;
+  min-width: 700px;
+  min-height: 480px;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
+#container > h1 {
+  text-align: center;
+}
 
+#perguntas > h3 {
+  padding-bottom: 10px;
+}
 
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
 
+button {
+  background-color: rgb(7, 238, 7);
+  position: absolute;
+  top: 430px;
+  left: 0px;
+  min-height: 50px;
+  min-width: 701px;
+  border: none;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(38, 233, 142);
+}

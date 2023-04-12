@@ -1,0 +1,64 @@
+{
+  "quizData": [
+    {
+      "question": "Qual o seu objetivo:",
+      "a": "Ser feliz",
+      "b": "Pertencer a um grupo",
+      "c": "Proteger os fracos",
+      "d": "Ajudar os outros",
+      "e": "Viver ao máximo a vida",
+      "f": "Derrubar o que não está funcionando",
+      "g": "Relacionar-se com pessoas",
+      "h": "Criar coisas de valor",
+      "i": "Trazer alegria para o mundo",
+      "j": "Ensinar as pessoas",
+      "k": "Compreender a vida",
+      "l": "Criar uma família ou comunidade bem-sucedida"
+    },
+    {
+      "question": "Qual seu maior medo:",
+      "a": "Ser punido por fazer algo errado",
+      "b": "Ser excluído de grupos sociais",
+      "c": "Ser percebido como fraco",
+      "d": "Ser considerado egoísta",
+      "e": "Ficar preso em uma situação",
+      "f": "Não conseguir mudar situações",
+      "g": "Sentir-se não amado",
+      "h": "Falhar em criar algo grande",
+      "i": "Ser percebido como fraco",
+      "j": "Ser percebido como ignorante",
+      "k": "Magorar sem ter intenção",
+      "l": "Ser mimado ou traído"
+    },
+    {
+      "question": "Qual a sua maior virtude:",
+      "a": "Mente aberta",
+      "b": "Ser realista",
+      "c": "Coragem",
+      "d": "Compaixão",
+      "e": "Ser fiel aos próprios desejos",
+      "f": "Ser capas de mudar situações",
+      "g": "Amar",
+      "h": "Ser criativo",
+      "i": "Alegrar os ambientes",
+      "j": "Ser inteligente",
+      "k": "Ajudar as pessoas ampliarem a consciência",
+      "l": "Ser responsável e líder"
+    },
+    {
+      "question": "Qual a sua maior fraqueza:",
+      "a": "Confiar demais nos outros",
+      "b": "Ser muito carente",
+      "c": "Querer sempre ajudar mesmo quando não pedem ajuda",
+      "d": "Ser explorado pelos outros",
+      "e": "Não suportar a rotina",
+      "f": "Não conseguir se enquadrar na sociedade",
+      "g": "Querer sempre agradar os outros",
+      "h": "Perfeccionismo",
+      "i": "Não levar nada a sério",
+      "j": "Ser incapaz de tomar uma decição",
+      "k": "Ser egoísta e manipulador",
+      "l": "Ser autoritário"
+    }
+  ]
+}
