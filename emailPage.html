@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arquétipos</title>
+    <link rel="stylesheet" href="./estilos/styleEmail.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Para consultar o resultado de sua pesquisa os dados abaixo:</h1>
+      <div id="dataElements1">
+        <ul>
+          <li>
+            <label for="nameInput">Nome:</label>
+            <input type="text" id="nameInput" />
+          </li>
+          <li>
+            <label for="lastNameInput">Sobrenome:</label>
+            <input type="text" id="lastNameInput" />
+          </li>
+        </ul>
+      </div>
+      <div id="dataElements2">
+        <ul>
+          <li>
+            <label for="emailInput">Email:</label>
+            <input type="text" id="emailInput" />
+          </li>
+        </ul>
+      </div>
+      <p id="errorMsg"></p>
+      <button id="botao">Responder</button>
+    </div>
+
+    <script type="module" src="emailPage.js"></script>
+  </body>
+</html>

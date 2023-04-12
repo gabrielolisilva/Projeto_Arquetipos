@@ -96,10 +96,11 @@ const botao = document.getElementById("botao");
 
 let current_quiz = 0;
 const resultInfo = [];
+let quizData = [];
 
 async function loadQuiz() {
   deselectOptions();
-  const quizData = await fetch("http://localhost:3500/quizData").then((resp) =>
+  quizData = await fetch("http://localhost:3500/quizData").then((resp) =>
     resp.json()
   );
   const currentDataQuiz = quizData[current_quiz];
@@ -144,13 +145,14 @@ botao.addEventListener("click", (e) => {
   const answer = getSelectedOption();
   if (!answer) {
     errorMsg.innerHTML = "Nenhuma reposta selecionada !";
+    return;
+  }
+  if (current_quiz < quizData.length - 1 && answer) {
+    current_quiz++;
+    errorMsg.innerHTML = "";
+    loadQuiz();
+    generateResult(answer);
   } else {
-    if (current_quiz < 4) {
-      current_quiz++;
-      loadQuiz();
-      generateResult(answer);
-    } else {
-      alert("Terminout");
-    }
+    window.location.replace("/emailPage.html");
   }
 });
